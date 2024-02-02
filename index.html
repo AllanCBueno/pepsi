@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Pepsi</title>
+</head>
+
+<body>
+    <video src="./img/2853662151.mp4" autoplay muted loop class></video>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </a>
+        </header>
+        <div class="conteudo">
+            <div class="texto">
+                <h2>É isso que eu <span>Gosto</span></h2>
+                <p>O sabor inconfundível da Pepsi.</p>
+                <a href="#">Veja todos os produtos</a>
+            </div>
+            <div class="img">
+                <img src="./img/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="latinhas">
+            <li><img src="./img/pepsi001.png" class="azul"></li>
+            <li><img src="./img/pepsi002.png" class="branco"></li>
+            <li><img src="./img/pepsi003.png" class="preto"></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="#"><img src="./img/facebook.png" class="facebook"></a></li>
+            <li><a href="#"><img src="./img/twitter.png" class="twitter"></a></li>
+            <li><a href="#"><img src="./img/instagram.png" class="instagram"></a></li>
+        </ul>
+        </div>
+    </section>
+
+</body>
+
+<script>
+
+    let imgCopo = document.querySelector(".pepsi")
+    let azul = document.querySelector(".azul")
+    let branco = document.querySelector(".branco")
+    let preto = document.querySelector(".preto")
+
+    azul.addEventListener("click", () => {
+        imgCopo.src = "./img/pepsi001.png"
+    })
+    branco.addEventListener("click", () => {
+        imgCopo.src = "./img/pepsi002.png"
+    })
+    preto.addEventListener("click", () => {
+        imgCopo.src = "./img/pepsi003.png"
+    })
+
+
+</script>
+
+</html>
